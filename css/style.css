@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.container{
+    height: 100vh;
+    margin: 0 auto;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding-top: 10px;
+    width: 100%;
+    box-shadow: rgb(72, 62, 62) 2px 0px 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.wix{
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.icon{
+    font-size: 30px;
+    color: rgb(124, 114, 233);
+    display: inline;
+}
+.para p{
+    font-family: 'Roboto Slab', serif;
+}
+.heading a{
+    color: black;
+    font-weight: bolder;
+}
+.btn{
+    border: none;
+    width: 160px;
+    background-color: #305EE4;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.scl{
+    width: 25px;
+    height: 25px;
+    background-color: #f2c928;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.box1{
+    display: inline-flex;
+}
+.box1 h3{
+    font-size: 30px;
+}
+.box1 p{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.box2 a{
+    text-decoration: none;
+    color: black;
+    border-right: 2px solid gray;
+    font-size: 20px;
+    padding: 20px;
+}
+a.border{
+    border-right: none;
+}
+.header img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid rgba(rgba(193, 177, 177, 0.384));
+    
+}
+.header{
+    display: flex;
+    margin-top: 220px;
+    margin-left: 280px;
+}
+.section{
+    margin-left: 40px;
+    font-family: sans-serif;
+}
+.section h1{
+    font-size: 70px;
+    font-family: sans-serif;
+}
+.section h2{
+    margin-top: 20px;
+}
+.color{
+    display: flex;
+    margin-top: 50px;
+}
+.resume{
+    height: 100px;
+    width: 100px;
+    background-color: #f2c928;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+.resume p{
+    transform: translateY(50%);
+    margin-top: 30px;
+}
+.project{
+    height: 100px;
+    width: 100px;
+    background-color: #E6337A;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+.project p{transform: translateY(50%); margin-top: 30px;}
+.contact{
+    height: 100px;
+    width: 100px;
+    background-color: #305EE4;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid black;
+}
+.contact p{transform: translateY(50%); margin-top: 30px;}
+h1.bio{
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+h1 span{
+    color: #E6337A;
+}
+/* next section start heare */
+.container3{
+            min-height: 70vh;
+            background: black;
+            color: aliceblue;
+}
+    .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            background: black;
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+        .container2 h1{
+            color: aliceblue;
+        }
+        .box{
+            position: relative;
+            width: 380px;
+            height: 420px;
+            background-color: black;
+            border-radius: 8px;
+            overflow: hidden;
+            display: block;
+        }
+        .box::before{
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,rgb(66, 255, 101));
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,rgb(255, 66, 66));
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            animation-delay: 3s;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .from{
+            position: absolute;
+            background-color: black;
+            inset: 2px;
+            z-index: 10;
+        }
+        .from h2{
+            color: aliceblue;
+        }
+        .imgs{
+            width: 280px;
+            height: 400px; 
+            display: block; 
+            margin: 0 auto;
+            margin-top: 8px;
+        }
+        .bio-text h1{
+            font-size: 50px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            color: #f07aab;
+            position: relative;
+            top: 130px;
+            left: 0;
+        }
+        @media only screen and (max-width: 600px){
+        
+        .icon{
+            display: none;
+        }
+        .para p{
+            display: none;
+        }
+        .heading a{
+            display: none;
+        } 
+        .scl{
+            width: 15px;
+            height: 15px;
+        }
+        .box1 h3{
+            font-size: 20px;
+        }
+        .box1 p{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .box2 a{
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid gray;
+            font-size: 18px;
+            padding: 10px;
+        }
+        .header img{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid rgba(rgba(193, 177, 177, 0.384));
+            display: block;
+        }
+        .header{
+           margin-top: 50px;
+           margin-left: 45px;
+           display: block;
+        }
+        h1.bio{
+            font-size: 30px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 0px;
+        }
+        h1 span{
+            color: #305EE4;
+        }
+        .container3{
+            margin-top: 200px;
+        }
+        .bio-text h1{
+            font-size: 30px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            color: #f07aab;
+            position: relative;
+            top: 10px;
+            left: 0;
+        }
+        }
+/* next section ends heare */
